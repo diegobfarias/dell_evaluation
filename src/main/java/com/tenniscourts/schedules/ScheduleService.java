@@ -1,6 +1,7 @@
 package com.tenniscourts.schedules;
 
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -11,14 +12,16 @@ import com.tenniscourts.exceptions.BusinessException;
 import com.tenniscourts.exceptions.EntityNotFoundException;
 
 @Service
-@AllArgsConstructor
 public class ScheduleService {
 
-    private final ScheduleRepository scheduleRepository;
+    @Autowired
+    private ScheduleRepository scheduleRepository;
 
-    private final ScheduleMapper scheduleMapper;
+    @Autowired
+    private ScheduleMapper scheduleMapper;
 
-    private final TennisCourtService tennisCourtService;
+    @Autowired
+    private TennisCourtService tennisCourtService;
 
     public ScheduleDTO addSchedule(Long tennisCourtId, CreateScheduleRequestDTO createScheduleRequestDTO) {
         ScheduleDTO scheduleDTO = createScheduleDTO(createScheduleRequestDTO);

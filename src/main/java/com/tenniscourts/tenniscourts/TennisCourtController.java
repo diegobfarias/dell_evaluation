@@ -42,7 +42,7 @@ public class TennisCourtController extends BaseRestController {
         return ResponseEntity.ok(tennisCourtService.findTennisCourtById(tennisCourtId));
     }
 
-    @GetMapping("/{tennisCourtId}")
+    @GetMapping("freeSchedules/{tennisCourtId}")
     @ApiOperation(value = "API Operation that returns free schedules by the tennis court ID.")
     @ApiResponses(value = {
         @ApiResponse(code = 200, message = "Tennis court with schedules succesfully found."),

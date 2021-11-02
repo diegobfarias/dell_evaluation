@@ -33,7 +33,7 @@ public class ReservationServiceTest {
 
         Guest guestMock = Guest.builder().name("Rafael Nadal").build();
 
-        TennisCourt tennisCourtMock = TennisCourt.builder().name("Roland Garros").build();
+        TennisCourt tennisCourtMock = TennisCourt.builder().name("Roland Garros - Court Philippe-Chatrier").build();
 
         Schedule scheduleMock = Schedule.builder()
                 .tennisCourt(tennisCourtMock)
@@ -61,7 +61,7 @@ public class ReservationServiceTest {
 
         Guest guestMock = Guest.builder().name("Rafael Nadal").build();
 
-        TennisCourt tennisCourtMock = TennisCourt.builder().name("Roland Garros").build();
+        TennisCourt tennisCourtMock = TennisCourt.builder().name("Roland Garros - Court Philippe-Chatrier").build();
 
         Schedule scheduleMock = Schedule.builder()
                 .tennisCourt(tennisCourtMock)
@@ -89,7 +89,7 @@ public class ReservationServiceTest {
 
         Guest guestMock = Guest.builder().name("Rafael Nadal").build();
 
-        TennisCourt tennisCourtMock = TennisCourt.builder().name("Roland Garros").build();
+        TennisCourt tennisCourtMock = TennisCourt.builder().name("Roland Garros - Court Philippe-Chatrier").build();
 
         Schedule scheduleMock = Schedule.builder()
                 .tennisCourt(tennisCourtMock)
@@ -117,7 +117,7 @@ public class ReservationServiceTest {
 
         Guest guestMock = Guest.builder().name("Rafael Nadal").build();
 
-        TennisCourt tennisCourtMock = TennisCourt.builder().name("Roland Garros").build();
+        TennisCourt tennisCourtMock = TennisCourt.builder().name("Roland Garros - Court Philippe-Chatrier").build();
 
         Schedule scheduleMock = Schedule.builder()
                 .tennisCourt(tennisCourtMock)
@@ -145,7 +145,7 @@ public class ReservationServiceTest {
 
         Guest guestMock = Guest.builder().name("Rafael Nadal").build();
 
-        TennisCourt tennisCourtMock = TennisCourt.builder().name("Roland Garros").build();
+        TennisCourt tennisCourtMock = TennisCourt.builder().name("Roland Garros - Court Philippe-Chatrier").build();
 
         Schedule scheduleMock = Schedule.builder()
                 .tennisCourt(tennisCourtMock)
