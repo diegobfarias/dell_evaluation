@@ -16,6 +16,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 
 @Entity
@@ -37,6 +38,12 @@ public class Reservation extends BaseEntity<Long> {
 
     @NotNull
     private BigDecimal value;
+
+    @NotNull
+    private LocalDateTime startDateTime;
+
+    @NotNull
+    private LocalDateTime endDateTime;
 
     @NotNull
     private ReservationStatus reservationStatus = ReservationStatus.READY_TO_PLAY;
